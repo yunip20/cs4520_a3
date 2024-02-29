@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cs4520.assignment3.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_mvpFragment"
+            app:destination="@id/mvpFragment" />
+        <!-- Define actions or nested fragments here -->
+    </fragment>
+    <fragment
+        android:id="@+id/mvpFragment"
+        android:name="com.cs4520.assignment3.View.MVPFragment"
+        android:label="MVP">
+        <!-- Define actions or nested fragments here -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/mvvmFragment"
+        android:name="com.cs4520.assignment3.View.MVVMFragment"
+        android:label="MVVM">
+        <!-- Define actions or nested fragments here -->
+    </fragment>
+</navigation>
